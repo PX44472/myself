@@ -587,6 +587,26 @@ body {
     font-weight: normal !important;
 }
 
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-pink));
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(99, 102, 241, 0.3);
+}
+
 .footer {
     background: var(--dark-gray);
     color: var(--white);
