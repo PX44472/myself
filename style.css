@@ -556,6 +556,37 @@ body {
     font-size: 0.85rem;
 }
 
+.placeholder-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--light-blue), var(--light-pink));
+}
+
+.placeholder-content {
+    text-align: center;
+}
+
+.placeholder-content i {
+    font-size: 3rem;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.placeholder-content p {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.placeholder-hint {
+    color: var(--gray) !important;
+    font-size: 0.8rem !important;
+    font-weight: normal !important;
+}
+
 .footer {
     background: var(--dark-gray);
     color: var(--white);
