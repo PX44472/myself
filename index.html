@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="nav-container">
@@ -177,7 +179,7 @@
                         <div class="portfolio-item video-item">
                             <div class="video-wrapper">
                                 <video controls poster="video-placeholder.jpg">
-                                    <source src="your-video.mp4" type="video/mp4">
+                                    <source src="video-1.mp4" type="video/mp4">
                                     您的浏览器不支持视频播放
                                 </video>
                             </div>
@@ -189,7 +191,7 @@
                         <div class="portfolio-item video-item">
                             <div class="video-wrapper">
                                 <video controls poster="video-placeholder.jpg">
-                                    <source src="your-video-2.mp4" type="video/mp4">
+                                    <source src="video-2.mp4" type="video/mp4">
                                     您的浏览器不支持视频播放
                                 </video>
                             </div>
@@ -201,7 +203,7 @@
                         <div class="portfolio-item video-item">
                             <div class="video-wrapper">
                                 <video controls poster="video-placeholder.jpg">
-                                    <source src="your-video-3.mp4" type="video/mp4">
+                                    <source src="video-3.mp4" type="video/mp4">
                                     您的浏览器不支持视频播放
                                 </video>
                             </div>
@@ -210,9 +212,51 @@
                                 <p>作品描述</p>
                             </div>
                         </div>
+                        <div class="portfolio-item video-item">
+                            <div class="video-wrapper">
+                                <video controls poster="video-placeholder.jpg">
+                                    <source src="video-4.mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放
+                                </video>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>视频作品 4</h4>
+                                <p>作品描述</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item video-item">
+                            <div class="video-wrapper">
+                                <video controls poster="video-placeholder.jpg">
+                                    <source src="video-5.mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放
+                                </video>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>视频作品 5</h4>
+                                <p>作品描述</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item video-item">
+                            <div class="video-wrapper">
+                                <video controls poster="video-placeholder.jpg">
+                                    <source src="video-6.mp4" type="video/mp4">
+                                    您的浏览器不支持视频播放
+                                </video>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>视频作品 6</h4>
+                                <p>作品描述</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="upload-hint">
-                        <p><i class="fas fa-info-circle"></i> 上传视频作品：将视频文件（.mp4格式）放入网站文件夹，修改HTML中的视频路径即可</p>
+                        <p><i class="fas fa-info-circle"></i> 上传多个视频作品的方法：</p>
+                        <ul>
+                            <li>1. 将视频文件（.mp4格式）放入网站文件夹，文件名改为 video-1.mp4, video-2.mp4, video-3.mp4 ...</li>
+                            <li>2. 用记事本打开 index.html，修改每个视频下方的标题和描述</li>
+                            <li>3. 在终端运行：git add index.html video-1.mp4 video-2.mp4 ... 然后 git commit -m "添加视频作品" 和 git
+                                push origin master</li>
+                        </ul>
                     </div>
                 </div>
                 <div class="tab-panel" id="photo">
@@ -313,7 +357,7 @@
         });
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
@@ -322,4 +366,5 @@
         });
     </script>
 </body>
+
 </html>

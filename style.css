@@ -543,6 +543,19 @@ body {
     margin-right: 8px;
 }
 
+.upload-hint ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.upload-hint li {
+    padding: 8px 0;
+    color: var(--dark-gray);
+    font-size: 0.85rem;
+}
+
 .footer {
     background: var(--dark-gray);
     color: var(--white);
